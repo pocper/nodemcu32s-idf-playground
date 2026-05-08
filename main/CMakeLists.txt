@@ -1,0 +1,14 @@
+idf_component_register(SRCS "main.c"
+                       PRIV_REQUIRES spi_flash
+                       REQUIRES freertos
+                       REQUIRES nvs_flash
+                       REQUIRES esp_driver_gpio
+                       REQUIRES esp_driver_spi
+                       REQUIRES esp_timer
+                       REQUIRES esp_driver_uart
+                       REQUIRES esp_wifi
+                       REQUIRES esp_http_client
+                       REQUIRES esp_http_server
+                       REQUIRES lwip
+                       REQUIRES mbedtls
+                       INCLUDE_DIRS "")
