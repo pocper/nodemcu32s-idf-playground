@@ -47,12 +47,11 @@ idf.py --version
 2. **複製**該檔案內容，**貼上並覆蓋**到 `main/main.c`。
 3. **注意**：若執行 **04_SPI** 範例，請將資料夾內的 `.h` 標頭檔一併複製到 `main/` 目錄。
 4. 開啟終端機執行編譯與燒錄：
-
-```bash
-idf.py set-target esp32
-idf.py build
-idf.py -p COM10 flash monitor  # 請將 COM10 改為你的序列埠
-```
+    ```bash
+    idf.py set-target esp32
+    idf.py build
+    idf.py -p COM10 flash monitor  # 請將 COM10 改為你的序列埠
+    ```
 
 * **燒錄提示**：看到 `Connecting........` 時，請長按板子上的 **IO0 (BOOT)** 按鈕直到開始寫入。
 * **退出監控**：在 Monitor 畫面按下 `Ctrl + ]`。
